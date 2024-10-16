@@ -1,0 +1,625 @@
+/* Font chữ chung cho toàn bộ trang sử dụng font 'Play' */
+body {
+    font-family: 'Play', sans-serif;
+  }
+  
+  /* Header và menu sử dụng font 'Josefin Sans' */
+  header {
+    background-color: rgb(218, 209, 28) !important;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  header span {
+    font-size: 14px;
+  }
+  
+  header a {
+    font-size: 14px;
+  }
+  
+  .navbar-brand span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .navbar-nav .nav-item .nav-link  {
+    color: rgb(255, 255, 255) ;
+    font-weight: bold;
+    margin-right: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(218, 209, 28);
+    border-bottom: 2px solid rgb(218, 209, 28);
+  }
+  
+  .navbar-nav .nav-item .active {
+    color: rgb(218, 209, 28);
+    border-bottom: 2px solid rgb(218, 209, 28);
+  }
+
+  /* .navbar {
+    border-bottom: 1px solid #e7e7e7;
+  } */
+  .content-logo{
+    color:rgb(218, 209, 28);
+    font-size: 25px;
+    font-weight: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .img-logo{
+  width: 196px;
+  height: 100px;
+  }
+  @media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */       
+    .content-logo{
+      color:rgb(218, 209, 28);
+      font-size: 16px !important;
+      margin-top:2px;
+    }
+    .img-logo{
+      width: 125px;
+      height: 70px;
+      }
+   }
+  .hero{
+    height: 570px; background-size: cover; 
+    background-position: center;
+  }
+  @media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */       
+    .hero {
+      height: 420px;
+          }
+   }
+   .statistical
+    {
+        background-color: rgb(0, 26, 38);
+        max-width:1058px;
+        height: 120px;
+        position: absolute;
+        top: -60px;
+        z-index: 1;
+        left: 15%;
+        right: 15%;
+        bottom: 5px;
+        display: block;
+    }
+@media (max-width: 1024px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .statistical {
+        width: 100%; /* Điều chỉnh lại kích thước */
+        top: -80px;
+        left: 0; /* Căn giữa theo chiều ngang */
+    }
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+  .statistical {
+    display: none !important;
+  }
+}
+@media (min-width: 1600px) { /* Kích thước màn hình nhỏ hơn máy tính */
+  .statistical {
+    display: none !important;
+  }
+}
+.statistical-item{
+    text-align: center; 
+    border-right: 2px solid rgb(218, 209, 28);
+    margin-right: 4px;
+}
+.title-hero
+{
+    font-size: 45px;
+    color:rgb(236 199 16);
+}
+.title-h4{
+  color:rgb(244, 220, 98);
+  font-size: larger;
+}
+.custom-title {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.custom-title:before,
+.custom-title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20%; /* Chiều rộng của đường gạch */
+  height: 1px;
+  background-color: rgb(244, 220, 98);
+}
+
+.custom-title:before {
+  left: 0;
+}
+
+.custom-title:after {
+  right: 0;
+}
+
+.custom-title span {
+  color: rgb(236 199 16); /* Màu chữ */
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0 5px; /* Điều chỉnh khoảng cách giữa chữ và đường gạch */
+}
+.content-color {
+  font-size: 17px;
+  color:rgb(255, 255, 255);
+  font-family: 'Times New Roman',Times, serif;
+}
+.learnmore:hover {
+  text-decoration: underline;
+  color: rgb(0, 192, 232);
+}
+.content-commit{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:rgb(218, 209, 28);
+}
+.gioithieu > img {
+  width: 100%;
+  height:200px;
+}
+
+.gioithieu > h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  /* padding: 5px; */
+}
+.customer-relative
+{
+    position: relative;
+}
+.customers{
+    position: absolute;
+    top:-112px;
+    height:380px;
+    z-index:1;
+    background-color: #ffffff;
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .customers{
+      position: absolute;
+      height:450px;
+      width:300px;
+      z-index:1;
+      background-color: #ffffff;
+    }
+   }
+   .map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact-button {
+  border-radius: 20px !important;
+  font-size: 20px !important;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-button svg {
+  fill: white;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: rgb(203, 222, 98)  !important;
+  color: rgb(218, 209, 28);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover svg {
+  fill: rgb(0, 192, 232);
+}
+.linenonecolor{
+  flex: 1;
+  height: 5px;
+  min-width: 50px;
+  background-color: rgb(231, 231, 231);
+}
+.overlay{
+  position: absolute;
+  top:120px;
+  left:100px;
+  max-width: 700px;
+}
+.title-heron{
+display: inline;
+margin-right: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 40px;
+line-height: 1.5;
+color:rgb(237, 240, 250);
+}
+.content-hero{
+  font-size: 30px;
+  line-height: 1.5;
+  color:rgb(218 209 28);
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .title-heron{
+      display: inline;
+      margin-right: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 250px;
+      padding: 2px;
+      color:rgb(237, 240, 250);
+      line-height: 1.5;
+      }
+      .overlay{
+        position: absolute;
+        top:120px;
+        left:5px;
+        max-width: 250px;
+      }
+      .content-hero{
+        font-size: 12px;
+        color:rgb(217, 240, 143);
+      }
+      .contact-button {
+        border-radius: 20px !important;
+        background-color: rgb(223, 154, 77) !important;
+        color: white;
+        font-size: 11px !important;
+        width:100px;
+        transition: all 0.3s ease;
+      }
+ }
+ .contacts{
+  margin-top: 2px;
+ }
+ @media (max-width: 576px) { 
+  .contacts{
+    margin-top: 310px !important;
+   }
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+        
+  .stat-item h3 {
+      font-size: 30px;
+        }
+ }
+ .menu-overlay{
+  display: none;
+ }
+ .iconclose{
+  position: absolute;
+  top:2px;
+  right:2px;
+  display: none;
+ }
+ @media (max-width: 370px) { /* Kích thước màn hình nhỏ hơn máy tính */
+      
+  .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 30px;
+      float: right;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 18px;
+      cursor: pointer;
+  }
+}
+ @media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+      
+  .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 30px;
+      float: right;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 25px;
+      cursor: pointer;
+  }
+  
+  .bar {
+      width: 100%;
+      height: 4px;
+      background-color: rgb(38, 168, 190);
+      transition: all 0.3s ease;
+  }
+  
+  /* X Icon */
+  .bar1.transform {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .bar2.transform {
+      opacity: 0;
+  }
+  
+  .bar3.transform {
+      transform: rotate(-45deg) translate(6px, -6px);
+  }
+  .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0, 17, 26);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      z-index: 9;
+  }
+
+  .menu-overlay.open {
+      transform: translateY(0);
+  }
+
+  .menu-overlay ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+  }
+
+  .menu-overlay ul li {
+      margin: 20px 0;
+  }
+
+  .menu-overlay ul li a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .iconclose{
+      display: block;
+     }
+ }
+ html {
+  scroll-behavior: smooth;
+}
+.title-h5{
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:aliceblue;
+}
+.content-h5{
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#222;
+}
+.quickly{
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#222;
+}
+/* Preloader styling */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 26, 38);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-logo img {
+  margin:38px;
+  width: 150px; /* Adjust size of the logo */
+  animation: logo-pulse 2s infinite; /* Optional animation for logo */
+}
+
+/* Optional: Add a pulsing effect for the logo */
+@keyframes logo-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Fade out effect for preloader */
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+/* Ẩn nội dung ban đầu và di chuyển nó xuống dưới */
+.fade-in {
+  opacity: 0;
+  transform: translateY(180px);
+  transition: opacity 2s ease-out, transform 2s ease-out; /* Thời gian hiệu ứng */
+}
+
+/* Khi trang load xong và lớp .show được thêm vào */
+.show {
+  opacity: 1;
+  transform: translateY(0); /* Di chuyển lên vị trí gốc */
+}
+/* Định dạng biểu tượng Back to Top */
+.back-to-top {
+  position: fixed; /* Giữ vị trí cố định trên màn hình */
+  bottom: 30px; /* Khoảng cách từ cạnh dưới màn hình */
+  right: 30px; /* Khoảng cách từ cạnh phải màn hình */
+  display: none; /* Ẩn nút khi không cần thiết */
+  background-color: rgb(234, 143, 38); /* Màu nền */
+  color: #fff; /* Màu biểu tượng */
+  border-radius: 50%; /* Làm tròn biểu tượng */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Đảm bảo nút luôn nằm trên các phần tử khác */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Khi người dùng cuộn xuống, nút sẽ hiển thị */
+.back-to-top.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top svg {
+  fill: #fff; /* Màu của biểu tượng */
+}
+
+/* Thêm hiệu ứng hover cho nút */
+.back-to-top:hover {
+  background-color: #009fc2; /* Màu nền khi hover */
+}
+/* Định dạng icon Zalo */
+.zalo-link {
+  position: fixed;
+  bottom: 100px; /* Cùng chiều với Back to Top */
+  right: 30px; /* Cách nút Back to Top một chút */
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.zalo-link img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+/* Thêm hiệu ứng hover */
+.zalo-link:hover {
+  background-color: #0070e0;
+}
+.cup-link {
+  position: fixed;
+  bottom: 150px; /* Cùng chiều với Back to Top */
+  right: 10px; /* Cách nút Back to Top một chút */
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cup-link img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* Thêm hiệu ứng hover */
+.cup-link:hover {
+  background-color: #0070e0;
+}
+.contact-header{
+display: block;
+}
+#cursor {
+  display: inline-block;
+  width: 10px;
+  visibility: visible;
+}
+.btn-prev{
+ left:266px !important;
+ border: none;
+ background-color: rgb(3, 193, 233);
+ opacity: 1;
+}
+.btn-next{
+ right:70px !important;
+ border: none;
+ background-color: rgb(3, 193, 233);
+opacity: 1;
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */ 
+  .contact-header{
+    display: none;
+    }
+    #cursor {
+      display: none;
+      width: 10px;
+      visibility: visible;
+    }
+    .btn-next{
+      opacity: 0;
+     }
+     .btn-prev{
+      opacity: 0;
+     }
+     .cup-link {
+      position: fixed;
+      display: none;
+    }
+}
+.services__item {
+  transition: transform 0.4s ease; /* Thời gian và hiệu ứng chuyển động */
+}
+
+.services__item:hover {
+  transform: scale(1.05); /* Phóng to khối lên 5% khi hover */
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0%); /* Bắt đầu từ vị trí 50% */
+  }
+  100% {
+    transform: translateY(-80%); /* Kết thúc ở vị trí -80% */
+  }
+}
+.img-container {
+  animation: moveUp 15s linear infinite;
+}
+
+
+
+.img-full-height {
+  height: 250px;
+  width:100%;
+  object-fit: cover;
+}
+
+.img-half-height {
+  height: 190px;
+  width:100%;
+  object-fit: cover;
+}
